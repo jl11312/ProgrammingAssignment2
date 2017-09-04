@@ -69,7 +69,7 @@ cacheSolve <- function(x, ...) {
    # First call to cacheSolve for this matrix.  Need to compute and cache the inverse
    #
    data <- x$get()
-   inverse <- solve(data)
+   inverse <- solve(data, ...)
    x$setInverse(inverse)
    
    inverse
